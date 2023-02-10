@@ -2,7 +2,7 @@ import logging
 import os
 
 #Broker configuration
-IP = '192.168.1.1'
+IP = '127.0.0.1'
 PORT = 1883
 IS_TLS = False
 WAIT_TIME = 1
@@ -11,7 +11,7 @@ TLS_CONFIG ={
     "ca_certs" : "/etc/mosquitto/certs/ca.crt"
 }
 
-BASE_PATH = "data/totolink/"
+BASE_PATH = "data/test"
 if not os.path.exists(BASE_PATH):
     os.makedirs(BASE_PATH)
 DB_PATH = BASE_PATH + "data.db"
